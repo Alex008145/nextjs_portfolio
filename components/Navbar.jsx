@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn, FaTelegram } from "react-icons/fa";
+import { FaGithub, FaTelegram } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -12,8 +12,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
-      <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
+    <div className="fixed bg-[#ecf0f3] w-full h-20 shadow-xl z-[100]">
+      <div className="flex items-center justify-between w-full h-full px-4 2xl:px-16">
         <Image src="/assets/navLogo.png" alt="logo" width={100} height={50} />
         <div>
           <ul className="hidden md:flex">
@@ -24,9 +24,7 @@ const Navbar = () => {
               <li className="ml-10 text-xl hover:text-purple-900">Обо мне</li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-xl hover:text-purple-900">
-                Образование
-              </li>
+              <li className="ml-10 text-xl hover:text-purple-900">Навыки</li>
             </Link>
             <Link href="/">
               <li className="ml-10 text-xl hover:text-purple-900">Проекты</li>
@@ -51,15 +49,18 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#d1d2ed] p-10 ease-in duration-500"
+              ? "md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>
             <div className="flex items-center justify-between w-full">
               <Image src="/assets/navLogo.png" width="87" height="35" alt="/" />
-              <div className="p-3 rounded-full shadow-lg cursor-pointer shadow-gray-400">
-                <AiOutlineClose onClick={navHandler} />
+              <div
+                className="p-3 rounded-full shadow-lg cursor-pointer shadow-gray-400"
+                onClick={navHandler}
+              >
+                <AiOutlineClose />
               </div>
             </div>
             <div className="my-4 border-b border-gray-500">

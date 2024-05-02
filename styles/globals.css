@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-[#d1d2ed] text-[#1f2937] tracking-wide;
+    @apply bg-white text-[#1f2937] tracking-wide;
   }
 
   h1,

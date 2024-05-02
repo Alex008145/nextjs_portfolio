@@ -1,0 +1,18 @@
+import Image from "next/image";
+
+const Skill = ({ src, name }) => {
+  return (
+    <div className="p-6 duration-300 ease-in shadow-xl rounded-xl hover:scale-110">
+      <div className="grid items-center justify-center grid-cols-2 gap-4">
+        <div className="m-auto">
+          <Image src={src} width={64} height={64} alt="/" />
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <h3>{name}</h3>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Skill;
