@@ -14,7 +14,7 @@ const Main = () => {
           <h1 className="py-4 text-gray-700">
             Здравствуйте, я <span className="text-purple-800">Алексей</span>
           </h1>
-          <h1 className="py-4 text-gray-700">Frontend developer</h1>
+          <h1 className="py-4 text-gray-700">Front-end developer</h1>
           <p className="py-4 text-xl tracking-wide text-gray-600 max-w-[70%] m-auto">
             Мой основной стек технологий:{" "}
             <span className="font-bold text-purple-800">
