@@ -5,7 +5,7 @@ import { FaGithub, FaTelegram } from "react-icons/fa";
 
 const Main = () => {
   return (
-    <div className="w-full h-screen text-center">
+    <div id="home" className="w-full h-screen text-center">
       <div className="flex items-center justify-center w-full h-full p-2 mx-auto max-w-[1240px]">
         <div>
           <p className="text-xl tracking-wide text-gray-600 uppercase">

@@ -9,8 +9,8 @@ import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   return (
-    <div className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
+    <div id="projects" className="w-full">
+      <div className="max-w-[1240px] mx-auto px-2 py-32">
         <p className="text-xl tracking-widest text-purple-800 uppercase">
           Проекты
         </p>

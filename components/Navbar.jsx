@@ -1,35 +1,53 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaTelegram } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
   const navHandler = () => {
     setNav(!nav);
   };
 
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
+
   return (
-    <div className="fixed bg-[#ecf0f3]  w-full h-20 shadow-xl z-[100]">
+    <div
+      className={
+        shadow ? "fixed w-full h-20 shadow-xl z-50" : "fixed w-full h-20 z-50 "
+      }
+    >
       <div className="flex items-center justify-between w-full h-full px-4 2xl:px-16">
-        <Image src="/assets/navLogo.png" alt="logo" width={100} height={50} />
+        <Link href="/#home">
+          <Image src="/assets/navLogo.png" alt="logo" width={100} height={50} />
+        </Link>
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-xl hover:text-purple-900">Главная</li>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <li className="ml-10 text-xl hover:text-purple-900">Обо мне</li>
             </Link>
-            <Link href="/">
+            <Link href="/#skills">
               <li className="ml-10 text-xl hover:text-purple-900">Навыки</li>
             </Link>
-            <Link href="/">
+            <Link href="/#projects">
               <li className="ml-10 text-xl hover:text-purple-900">Проекты</li>
             </Link>
-            <Link href="/">
+            <Link href="/#contact">
               <li className="ml-10 text-xl hover:text-purple-900">Контакт</li>
             </Link>
           </ul>
@@ -55,7 +73,14 @@ const Navbar = () => {
         >
           <div>
             <div className="flex items-center justify-between w-full">
-              <Image src="/assets/navLogo.png" width="87" height="35" alt="/" />
+              <Link href="/#home">
+                <Image
+                  src="/assets/navLogo.png"
+                  width="87"
+                  height="35"
+                  alt="/"
+                />
+              </Link>
               <div
                 className="p-3 rounded-full shadow-lg cursor-pointer shadow-gray-400"
                 onClick={navHandler}
@@ -70,19 +95,29 @@ const Navbar = () => {
           <div>
             <ul className="flex flex-col py-4">
               <Link href="/">
-                <li className="py-4 text-xl">Главная</li>
+                <li onClick={() => setNav(false)} className="py-4 text-xl">
+                  Главная
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-xl">Обо мне</li>
+              <Link href="/#about">
+                <li onClick={() => setNav(false)} className="py-4 text-xl">
+                  Обо мне
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-xl">Образование</li>
+              <Link href="/#skills">
+                <li onClick={() => setNav(false)} className="py-4 text-xl">
+                  Образование
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-xl">Проекты</li>
+              <Link href="/#projects">
+                <li onClick={() => setNav(false)} className="py-4 text-xl">
+                  Проекты
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-xl">Контакт</li>
+              <Link href="/#contact">
+                <li onClick={() => setNav(false)} className="py-4 text-xl">
+                  Контакт
+                </li>
               </Link>
             </ul>
             <div className="pt-40">
