@@ -3,10 +3,28 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaTelegram } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (
+      router.asPath === "/property" ||
+      router.asPath === "/crypto" ||
+      router.asPath === "/twitch"
+    ) {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [router]);
 
   const navHandler = () => {
     setNav(!nav);
@@ -25,6 +43,7 @@ const Navbar = () => {
 
   return (
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow ? "fixed w-full h-20 shadow-xl z-50" : "fixed w-full h-20 z-50 "
       }
@@ -34,7 +53,7 @@ const Navbar = () => {
           <Image src="/assets/navLogo.png" alt="logo" width={100} height={50} />
         </Link>
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-xl hover:text-purple-900">Главная</li>
             </Link>
