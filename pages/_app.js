@@ -1,13 +1,13 @@
-import Head from "next/head";
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
+import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <ThemeProvider attribute="class">
       <Navbar />
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   );
 }
 

@@ -4,11 +4,12 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: Helvetica, sans-serif;
 }
 
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+    @apply bg-[#ecf0f3]  text-[#1f2937] tracking-wide dark:bg-[#121212] dark:text-white;
   }
 
   h1,
@@ -32,7 +33,7 @@ html {
     @apply cursor-pointer;
   }
 
-  button {
+  /* button {
     @apply text-white uppercase shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-purple-800 to-blue-400;
-  }
+  } */
 }
