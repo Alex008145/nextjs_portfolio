@@ -19,7 +19,8 @@ const Navbar = () => {
     if (
       router.asPath === "/property" ||
       router.asPath === "/crypto" ||
-      router.asPath === "/twitch"
+      router.asPath === "/twitch" ||
+      router.asPath === "/eats"
     ) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
@@ -101,7 +102,7 @@ const Navbar = () => {
             </button>
           ) : (
             <button
-              className="p-2 m-4 duration-300 ease-in bg-gray-100 border-2 border-purple-700 rounded-full hover:scale-125"
+              className="p-2 m-4 duration-300 ease-in border-2 border-purple-700 rounded-full hover:scale-125"
               onClick={() => setTheme("dark")}
             >
               <FaMoon size={30} />
