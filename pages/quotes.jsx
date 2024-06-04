@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import promptopiaImg from "../public/assets/projects/promptopia.png";
+import quotesImg from "../public/assets/projects/quotes.png";
 import { GiPlayButton } from "react-icons/gi";
 import Link from "next/link";
 import { HiOutlineArrowLeft } from "react-icons/hi";
@@ -10,7 +10,7 @@ const property = () => {
   return (
     <div className="w-full">
       <Head>
-        <title>Alexey | Promptopia</title>
+        <title>Alexey | Great Quotes</title>
       </Head>
       <div className="w-screen h-[30vh] lg:h-[40vh] relative  z-60">
         <div className="fixed top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10 " />
@@ -18,12 +18,12 @@ const property = () => {
           className="absolute z-1"
           objectFit="cover"
           layout="fill"
-          src={promptopiaImg}
+          src={quotesImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10">
-          <h2 className="py-2">Promptopia</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h2 className="py-2">Great Quotes</h2>
+          <h3>React JS / Firebase API</h3>
         </div>
       </div>
 
@@ -32,19 +32,19 @@ const property = () => {
           {/* <p className="py-4">Проект</p> */}
           <h2 className="py-4 text-purple-700">Описание</h2>
           <p className="py-4">
-            Этот проект написан на Next.js, стилизован с помощью Tailwind и
-            использует базу данных MongoDB. Присутствует авторизация через
-            Google API. <br /> Promptopia — это инструмент с открытым исходным
-            кодом для сохранения запросов к ИИ. Он предоставляет пользователям
-            возможность создавать и делиться творческими подсказками к
-            изображениям, текстам.
+            Этот учебный проект создан на React JS и Firebase API для хранения
+            данных о цитатах. Пользователи могут добавлять свои цитаты и
+            комментарии. Добавлена возможность сортировки. Хостинг реализован на
+            Firebase.
           </p>
 
-          <button className="flex items-center justify-center p-6 px-8 py-2 mt-4 mr-8 text-xl duration-300 ease-in rounded-full shadow-md cursor-pointer shadow-purple-700 hover:scale-125">
-            Превью сайта
-          </button>
+          <a href="https://react-redux-cf72c.web.app/quotes" target="_blank">
+            <button className="flex items-center justify-center p-6 px-8 py-2 mt-4 mr-8 text-xl duration-300 ease-in rounded-full shadow-md cursor-pointer shadow-purple-700 hover:scale-125">
+              Превью сайта
+            </button>
+          </a>
 
-          <a href="https://github.com/Alex008145/ai_prompts" target="_blank">
+          <a href="https://github.com/Alex008145/great-quotes" target="_blank">
             <button className="flex items-center justify-center p-6 px-8 py-2 mt-4 text-xl duration-300 ease-in rounded-full shadow-md cursor-pointer shadow-purple-700 hover:scale-125">
               Исходный код на GitHub
             </button>
@@ -55,19 +55,13 @@ const property = () => {
             <p className="pb-2 font-bold text-center">Технологии</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="flex items-center py-2 text-purple-700">
-                <GiPlayButton className="mr-2" /> Next.js
-              </p>
-              <p className="flex items-center py-2 text-purple-700">
                 <GiPlayButton className="mr-2" /> React
               </p>
               <p className="flex items-center py-2 text-purple-700">
-                <GiPlayButton className="mr-2" /> Tailwind
+                <GiPlayButton className="mr-2" /> React Router v5
               </p>
               <p className="flex items-center py-2 text-purple-700">
-                <GiPlayButton className="mr-2" /> MongoDB
-              </p>
-              <p className="flex items-center py-2 text-purple-700">
-                <GiPlayButton className="mr-2" /> Google API
+                <GiPlayButton className="mr-2" /> Firebase API
               </p>
             </div>
           </div>

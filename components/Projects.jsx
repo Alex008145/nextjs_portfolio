@@ -4,7 +4,10 @@ import propertyImg from "../public/assets/projects/property.jpg";
 import cryptoImg from "../public/assets/projects/crypto.jpg";
 import eatsImg from "../public/assets/projects/eats.png";
 import twitchImg from "../public/assets/projects/twitch.jpg";
-import Link from "next/link";
+import promptopiaImg from "../public/assets/projects/promptopia.png";
+import tetrisImg from "../public/assets/projects/tetris.png";
+import cartImg from "../public/assets/projects/cart.png";
+import quotesImg from "../public/assets/projects/quotes.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -17,29 +20,29 @@ const Projects = () => {
         <h2 className="py-4">Примеры моих пет-проектов</h2>
         <div className="grid gap-8 md:grid-cols-2">
           <ProjectItem
-            title="Property Finder"
-            backgroundImg={propertyImg}
-            projectUrl="/property"
-          />
-          <ProjectItem
-            title="Crypto App"
-            backgroundImg={cryptoImg}
-            projectUrl="/crypto"
-          />
-          <ProjectItem
             title="React Eats"
             backgroundImg={eatsImg}
             projectUrl="/eats"
           />
           <ProjectItem
-            title="Twitch App"
-            backgroundImg={twitchImg}
+            title="Promptopia"
+            backgroundImg={promptopiaImg}
             projectUrl="/property"
           />
           <ProjectItem
-            title="Twitch App"
-            backgroundImg={twitchImg}
-            projectUrl="/property"
+            title="Tetris App"
+            backgroundImg={tetrisImg}
+            projectUrl="/tetris"
+          />
+          <ProjectItem
+            title="Shopping Cart"
+            backgroundImg={cartImg}
+            projectUrl="/cart"
+          />
+          <ProjectItem
+            title="Great Quotes"
+            backgroundImg={quotesImg}
+            projectUrl="/quotes"
           />
           <ProjectItem
             title="Twitch App"
