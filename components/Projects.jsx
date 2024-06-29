@@ -27,7 +27,7 @@ const Projects = () => {
           <ProjectItem
             title="Promptopia"
             backgroundImg={promptopiaImg}
-            projectUrl="/property"
+            projectUrl="/promptopia"
           />
           <ProjectItem
             title="Tetris App"
@@ -43,11 +43,6 @@ const Projects = () => {
             title="Great Quotes"
             backgroundImg={quotesImg}
             projectUrl="/quotes"
-          />
-          <ProjectItem
-            title="Twitch App"
-            backgroundImg={twitchImg}
-            projectUrl="/property"
           />
         </div>
       </div>

@@ -14,7 +14,7 @@ const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
         <h3 className="text-2xl tracking-wider text-white">{title}</h3>
         <h3 className="pt-2 pb-4 text-center text-white">React JS</h3>
         <Link href={projectUrl}>
-          <p className="py-3 text-lg font-bold text-center text-purple-700 duration-300 ease-in bg-white rounded-lg cursor-pointer hover:scale-125 dark:bg-[#121212]">
+          <p className="py-3 text-lg font-bold text-center text-purple-700 duration-300 ease-in bg-white rounded-lg cursor-pointer hover:scale-125 ">
             Подробнее
           </p>
         </Link>

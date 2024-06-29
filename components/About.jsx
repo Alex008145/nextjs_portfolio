@@ -21,27 +21,29 @@ const About = () => {
           </p>
           <h2 className="py-4">Кто я</h2>
           <p className="py-2 text-gray-600 dark:text-gray-400">
-            Im not your normal developer
+            Уже более полутора лет я изучаю разработку веб-приложений и в данный
+            момент углубляюсь в изучение React, NextJS.
           </p>
           <p className="py-2 text-gray-600 dark:text-gray-400">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Repellendus quae, veniam rerum eos neque laudantium necessitatibus
-            dolores nulla dolorem aliquam possimus deserunt error praesentium
-            fugiat, consequuntur saepe! Asperiores vero placeat impedit neque
-            deleniti officia possimus dolorum laboriosam cumque, dolore quasi
-            voluptates suscipit nobis porro necessitatibus ipsum quae, velit a!
-            Minus.
+            За время своего обучения я работал с:
+            <br />- созданием одностраничных веб приложний с помощью ReactJS
+            <br />- оптимизацией сайтов с использованием фреймворка NextJS и
+            Tailwind CSS
+            <br />- созданием адаптивных сайтов для мобильных и десктопных
+            устройств
+            <br />- API для хранения и получения данных с сервера (Firebase и
+            MongoDB)
+            <br />- Google OAuth для авторизации пользователей на сайте
+            <br />- в данный момент я работаю над проектом с собственной
+            авторизацией и базой данных пользователей
           </p>
           <p className="py-2 text-gray-600 dark:text-gray-400">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint,
-            aspernatur aliquam similique et harum, explicabo vitae veritatis
-            quidem debitis commodi accusantium quaerat! Neque praesentium maxime
-            molestiae dignissimos velit, ipsam harum nemo, recusandae obcaecati
-            culpa fugit quibusdam, eos inventore reprehenderit totam!
+            Я стремлюсь закрывать пробелы в своих знаниях и изучать новые
+            технологии для улучшения своих навыков разработчика.
           </p>
           <Link href="/#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer dark:text-gray-400">
-              Check out some of my latest projects.
+              Вы можете посмотреть примеры моих проектов
             </p>
           </Link>
         </div>

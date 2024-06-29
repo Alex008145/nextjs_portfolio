@@ -19,9 +19,9 @@ const Main = () => {
             Front-end developer
           </h1>
           <p className="py-4 text-xl tracking-wide text-gray-600 max-w-[70%] m-auto dark:text-gray-400">
-            Мой основной стек технологий:{" "}
+            Мой основные технологии:{" "}
             <span className="font-bold text-purple-700">
-              HTML, CSS, JavaScript, React.
+              React, JavaScript, HTML, CSS.
             </span>
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">

@@ -17,10 +17,11 @@ const Navbar = () => {
 
   useEffect(() => {
     if (
-      router.asPath === "/property" ||
-      router.asPath === "/crypto" ||
-      router.asPath === "/twitch" ||
-      router.asPath === "/eats"
+      router.asPath === "/promptopia" ||
+      router.asPath === "/tetris" ||
+      router.asPath === "/quotes" ||
+      router.asPath === "/eats" ||
+      router.asPath === "/cart"
     ) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
@@ -95,7 +96,7 @@ const Navbar = () => {
 
           {currentTheme === "dark" ? (
             <button
-              className="p-2 m-4 duration-300 ease-in bg-[#121212] border-2 border-purple-700 rounded-full hover:scale-125"
+              className="p-2 m-4 duration-300 ease-in bg-transparent border-2 border-purple-700 rounded-full hover:scale-125"
               onClick={() => setTheme("light")}
             >
               <FaSun size={30} />

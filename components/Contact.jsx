@@ -33,7 +33,7 @@ const Contact = () => {
                 <h2 className="py-2 text-purple-700">Алексей</h2>
                 <p className="py-4 text-xl">Front-end developer</p>
                 <p className="py-4 text-xl">
-                  Я ищу работу на полный рабочий день, удаленно или в офисе в
+                  Ищу работу на полный рабочий день, удаленно или в офисе в
                   Санкт-Петербурге.
                 </p>
               </div>

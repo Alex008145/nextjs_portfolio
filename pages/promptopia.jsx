@@ -23,7 +23,7 @@ const property = () => {
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10">
           <h2 className="py-2">Promptopia</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h3>React JS / Tailwind </h3>
         </div>
       </div>
 
@@ -32,12 +32,15 @@ const property = () => {
           {/* <p className="py-4">Проект</p> */}
           <h2 className="py-4 text-purple-700">Описание</h2>
           <p className="py-4">
-            Этот проект написан на Next.js, стилизован с помощью Tailwind и
-            использует базу данных MongoDB. Присутствует авторизация через
-            Google API. <br /> Promptopia — это инструмент с открытым исходным
-            кодом для сохранения запросов к ИИ. Он предоставляет пользователям
-            возможность создавать и делиться творческими подсказками к
-            изображениям, текстам.
+            Promptopia — это инструмент с открытым исходным кодом для сохранения
+            запросов к ИИ. Он предоставляет пользователям возможность создавать
+            и делиться творческими подсказками к изображениям, текстам. <br />
+            -Проект создан с помощью Next.js
+            <br /> -Cтилизован с помощью Tailwind
+            <br /> -Использует базу данных MongoDB для хранения запросов и
+            данных авторов.
+            <br /> -Присутствует авторизация через Google OAuth API.
+            {/* <br /> -Реализована строка поиска по тегам и именам. */}
           </p>
 
           <button className="flex items-center justify-center p-6 px-8 py-2 mt-4 mr-8 text-xl duration-300 ease-in rounded-full shadow-md cursor-pointer shadow-purple-700 hover:scale-125">
