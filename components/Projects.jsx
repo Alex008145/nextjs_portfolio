@@ -1,9 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import propertyImg from "../public/assets/projects/property.jpg";
-import cryptoImg from "../public/assets/projects/crypto.jpg";
+
 import eatsImg from "../public/assets/projects/eats.png";
-import twitchImg from "../public/assets/projects/twitch.jpg";
+import cryptoImg from "../public/assets/projects/crypto.png";
 import promptopiaImg from "../public/assets/projects/promptopia.png";
 import tetrisImg from "../public/assets/projects/tetris.png";
 import cartImg from "../public/assets/projects/cart.png";
@@ -19,6 +18,11 @@ const Projects = () => {
         </p>
         <h2 className="py-4">Примеры моих пет-проектов</h2>
         <div className="grid gap-8 md:grid-cols-2">
+          <ProjectItem
+            title="Crypto App"
+            backgroundImg={cryptoImg}
+            projectUrl="/crypto"
+          />
           <ProjectItem
             title="React Eats"
             backgroundImg={eatsImg}

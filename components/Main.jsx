@@ -19,7 +19,7 @@ const Main = () => {
             Front-end developer
           </h1>
           <p className="py-4 text-xl tracking-wide text-gray-600 max-w-[70%] m-auto dark:text-gray-400">
-            Мой основные технологии:{" "}
+            Мои основные технологии:{" "}
             <span className="font-bold text-purple-700">
               React, JavaScript, HTML, CSS.
             </span>

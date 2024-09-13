@@ -22,6 +22,7 @@ const Navbar = () => {
       router.asPath === "/quotes" ||
       router.asPath === "/eats" ||
       router.asPath === "/cart"
+      // || router.asPath === "/crypto"
     ) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
@@ -54,7 +55,7 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-md shadow-purple-700 z-50"
+          ? `fixed w-full h-20 shadow-md shadow-purple-700 z-50`
           : "fixed w-full h-20 z-50 "
       }
     >
