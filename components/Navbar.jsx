@@ -17,7 +17,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if (
-      router.asPath === "/promptopia" ||
+      // router.asPath === "/promptopia" ||
       router.asPath === "/tetris" ||
       router.asPath === "/quotes" ||
       router.asPath === "/eats" ||

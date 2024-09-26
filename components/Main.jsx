@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaTelegram } from "react-icons/fa";
@@ -26,16 +27,29 @@ const Main = () => {
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="p-6 text-xl duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-purple-700 hover:scale-125">
-              <FaTelegram />
+              <Link href="https://t.me/alex008145" target="blank">
+                <FaTelegram />
+              </Link>
             </div>
             <div className="p-6 text-xl duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-purple-700 hover:scale-125">
-              <FaGithub />
+              <Link href="https://github.com/Alex008145" target="blank">
+                <FaGithub />
+              </Link>
             </div>
             <div className="p-6 text-xl duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-purple-700 hover:scale-125">
-              <AiOutlineMail />
+              <Link href="mailto:alex008145@gmail.com" target="blank">
+                <AiOutlineMail />
+              </Link>
             </div>
             <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-purple-700 hover:scale-125">
-              <Image src="/assets/hh_logo.png" width={20} height={50}></Image>
+              <Link href="https://hh.ru" target="blank">
+                <Image
+                  src="/assets/hh_logo.png"
+                  width={20}
+                  height={50}
+                  alt="hh logo"
+                ></Image>
+              </Link>
             </div>
           </div>
         </div>
