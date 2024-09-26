@@ -26,31 +26,31 @@ const Main = () => {
             </span>
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="p-6 text-xl duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-purple-700 hover:scale-125">
-              <Link href="https://t.me/alex008145" target="blank">
+            <Link href="https://t.me/alex008145" target="blank">
+              <div className="p-6 text-xl duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-purple-700 hover:scale-125">
                 <FaTelegram />
-              </Link>
-            </div>
-            <div className="p-6 text-xl duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-purple-700 hover:scale-125">
-              <Link href="https://github.com/Alex008145" target="blank">
+              </div>
+            </Link>
+            <Link href="https://github.com/Alex008145" target="blank">
+              <div className="p-6 text-xl duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-purple-700 hover:scale-125">
                 <FaGithub />
-              </Link>
-            </div>
-            <div className="p-6 text-xl duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-purple-700 hover:scale-125">
-              <Link href="mailto:alex008145@gmail.com" target="blank">
+              </div>
+            </Link>
+            <Link href="mailto:alex008145@gmail.com" target="blank">
+              <div className="p-6 text-xl duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-purple-700 hover:scale-125">
                 <AiOutlineMail />
-              </Link>
-            </div>
-            <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-purple-700 hover:scale-125">
-              <Link href="https://hh.ru" target="blank">
+              </div>
+            </Link>
+            <Link href="https://hh.ru" target="blank">
+              <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-purple-700 hover:scale-125">
                 <Image
                   src="/assets/hh_logo.png"
                   width={20}
                   height={50}
                   alt="hh logo"
                 ></Image>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
